@@ -1,21 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="KoiSoft Services">
-    <meta name="author" content="KoiSoft">
-    <link rel="shortcut icon" href="../images/koisoft48.png">
+    <meta name="description" content="Koisoft Experts in Jira plugin development, customization and migration">
+    <meta name="author" content="KoiSoft Services">
+    <link rel="shortcut icon" href="images/k.png">
 
     <title>KoiSoft Services</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../stylesheets/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../stylesheets/jumbotron-narrow.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -25,56 +21,203 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/carousel.css" rel="stylesheet">
   </head>
-
+<!-- NAVBAR
+================================================== -->
   <body>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="index.html">Home</a></li>          
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="http://www.koisoft.net"><img src="../images/logo.png" style="height: 60px;"/></a>
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">KoiSoft Services</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <!--<li><a href="#about">About</a></li>-->
+                <li><a href="#contact">Contact</a></li>
+                <!--<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>-->
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
 
-      <div class="jumbotron">
-        <div>
-			<iframe src="//player.vimeo.com/video/79698619" width="500px" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-		</div>        
-        <p><a class="btn btn-lg btn-primary" href="https://marketplace.atlassian.com/plugins/com.stygian.jira.plugin.gotomeeting" role="button">Try for free</a></p>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/purple.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Zoho CRM Plugin for JIRA</h1>
+              <p>Display leads and accounts from Zoho CRM on a JIRA issue. Search for information from Zoho CRM using the Zoho CRM Search custom field.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://marketplace.atlassian.com/plugins/com.koisoft.jira.plugin.zohojira" role="button">Try it free</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/blue.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>GoToMeeting Plugin for JIRA</h1>
+              <p>GoToMeeting plugin for JIRA allows you to schedule meetings from an issue. Automatically send out meeting invites to all issue participants and maintain meeting notes in JIRA.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://marketplace.atlassian.com/plugins/com.stygian.jira.plugin.gotomeeting" role="button">Try it free</a></p>
+            </div>
+          </div>
+        </div>
+		<!--
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+		-->
       </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>JIRA Plugin Development</h4>
-          <p>We specialize in plugin development for JIRA. GoToMeeting plugin for JIRA is our first release on the Atlassian Marketplace but we have several new add-ons releasing soon. If you have a requirement, we can deliver. Contact us.</p>
 
-          <h4>JIRA Customization</h4>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/code.png" alt="Generic placeholder image">
+          <h2>JIRA Plugin Development</h2>
+          <p>e specialize in plugin development for JIRA. GoToMeeting plugin for JIRA is our first release on the Atlassian Marketplace but we have several new add-ons releasing soon. If you have a requirement, we can deliver. Contact us.</p>
+          <!--<p><a class="btn btn-primary" href="contact.html" role="button">Contact us &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/tools.png" alt="Generic placeholder image">
+          <h2>JIRA Customization</h2>
           <p>If you are a company starting your journey with JIRA, we can help from training, administration, setup and customization. Atlassian JIRA is a great tool for issue tracking but knowing all it's features will help you get the best out of it.</p>
-          
-        </div>
-
-        <div class="col-lg-6">
-          <h4>JIRA Migration</h4>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="images/thumbs.png" alt="Generic placeholder image">
+          <h2>JIRA Migration</h2>
           <p>Still using other issue tracking systems? Atlassian JIRA is quickly becoming the single most spoken about tool for issue tracking. With more than 40,000 companies using the tool, it is slowly becoming a standard for issue tracking.</p>
+          <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
-          <h4>JIRA Training</h4>
-          <p>Have you just implemented JIRA in your organization? Or do you have a team of developers who are new to JIRA plugin development and 
-		  customization? We can conduct both developer and administrator training.</p>
-          
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Zoho CRM Plugin for JIRA.</h2>
+          <p class="lead">Zoho CRM Plugin for JIRA allows you to display Leads, Accounts and other data from Zoho CRM on your JIRA issue. The plugin currently provides 3 custom fields with more being added in future releases.
+			</p>
+			<p><a href="https://koisoft.atlassian.net/wiki/display/ZCPFJ/Zoho+CRM+Plugin+for+JIRA">Documentation</a></p>
+
+			<p><a href="https://koisoft.atlassian.net/browse/ZCPFJ">Issues and feature requests</a></p>​
+</p>
+        </div>
+        <div class="col-md-5">
+          <iframe src="//player.vimeo.com/video/80178098" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/80178098">Watch the preview</a>.</p>
         </div>
       </div>
 
-      <div class="footer">
-        <p>&copy; KoiSoft 2013</p>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <iframe src="//player.vimeo.com/video/79698619" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/79698619">Watch the preview</a>.</p>
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">GoTo Meeting Plugin for JIRA</h2>
+          <p class="lead">GoToMeeting plugin for JIRA allows you to create meetings from a JIRA issue. It allows you to manage meeting notes and automatically send meeting invitations from JIRA.
+			</p>
+		<p><a href="https://koisoft.atlassian.net/wiki/display/GP/GoToMeeting+Plugin+for+JIRA">Documentation</a></p>
+
+
+		<p><a href="http://koisoft.atlassian.net">Issues and improvement/feature requests</a></p>
+        </div>
       </div>
 
-    </div> <!-- /container -->
+      <hr class="featurette-divider">
+
+      <!--<div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">-->
+
+      <!-- /END THE FEATURETTES -->
+		
+	<div id="contact">
+		<h2>Contact us</h2>
+		<p>Please email us at <a href="mailto:koisoft@outlook.com">koisoft@outlook.com</a> for any queries and questions. We can also help setup the plugins for you at no additional costs.</p>
+	</div>
+	<hr class="featurette-divider">
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 KoiSoft Services. &middot;</p>
+      </footer>
+
+    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
   </body>
 </html>
